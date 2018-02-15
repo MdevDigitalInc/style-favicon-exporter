@@ -11,6 +11,7 @@ const StyleLintPlugin = require('stylelint-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const WriteFilePlugin   = require('write-file-webpack-plugin')
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const config = {
 
@@ -55,7 +56,7 @@ const config = {
   //plugins
   plugins: [
     new webpack.LoaderOptionsPlugin({ options: { postcss: [ autoprefixer ]  } }),
-    new ExtractTextPlugin("/styles/styles.css"),
+    new ExtractTextPlugin("/styles/style.css"),
     new StyleLintPlugin({
       syntax: 'scss',
       configFile: './.stylelintrc'
@@ -81,7 +82,11 @@ const config = {
         yandex: false,
         windows: false
       }
-    })
+    }),
+    new CopyWebpackPlugin([
+      { from: 'page-header', to: __dirname + '/dist/html' },
+    ])
+
   ]
 };
 

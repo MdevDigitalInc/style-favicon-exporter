@@ -27,12 +27,15 @@
   "homepage": "https://github.com/MoreiraDevelopment/sass-boilerplate#readme",
   "devDependencies": {
     "@moreira-development/sass-boilerplate": "^1.1.0",
+    "autoprefixer": "^7.1.6",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^3.0.2",
+    "favicons-webpack-plugin": "0.0.7",
+    "file-loader": "^1.1.5",
     "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.5.3",
     "postcss-cssnext": "^3.0.2",
@@ -43,6 +46,8 @@
     "stylelint-processor-html": "^1.0.0",
     "stylelint-webpack-plugin": "^0.9.0",
     "to-string": "^0.2.0",
-    "webpack": "^3.8.1"
+    "webpack": "^3.8.1",
+    "webpack-config-utils": "^2.3.0",
+    "write-file-webpack-plugin": "^4.2.0"
   }
 }

@@ -43,7 +43,9 @@ const config = {
         use: ExtractTextPlugin.extract({
           fallback: "style-loader",
           use: [
-            { loader: 'css-loader?minimize&-autoprefixer!postcss-loader!sass-loader' },
+            { loader: 'css-loader?minimize&-autoprefixer!postcss-loader!sass-loader',
+              options: { url: false }
+            },
             { loader: 'sass-loader'},
             { loader: 'postcss-loader'}
           ]

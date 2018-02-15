@@ -11,9 +11,9 @@
 ----------------------------------------]*/
 
 /*----
-	Global Reset
+  MDEV Sass Boilerplate
 -----*/
-@import './reset.scss';
+@import '~@moreira-development/sass-boilerplate';
 
 /*----
 	Global Variables
@@ -21,22 +21,42 @@
 @import './variables.scss';
 
 /*----
-	Global Mixins
+	Global Typography
 -----*/
-@import './mixins.scss';
-
-/*----
-	Responsive Breakpoints
------*/
-@import './responsive.scss';
+@import './typography.scss';
 
 /*----
  	Utilities
 -----*/
 @import './utilities.scss';
 
-/*----
- 	Flex
+/*---
+  Icons
 -----*/
-@import './flex.scss';
+@import './icons.scss';
 
+/*---
+  Forms
+-----*/
+@import './forms.scss';
+
+/*---
+  WordPress Core
+-----*/
+@import './wp_core.scss';
+
+
+/*---
+  Scaffold
+-----*/
+@import './scaffolding.scss';
+
+/*----
+  Buttons
+-----*/
+@import './buttons.scss';
+
+/*----
+  Print
+-----*/
+@import './print.scss';

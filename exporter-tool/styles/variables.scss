@@ -3,9 +3,19 @@
 /-------------------------------------*/
 
 // Main colors
+$color-brand-primary: #13b2a9;
+$color-brand-accent: #333;
+$bkg-light-grey: #fafafa;
+$black: #000;
+$white: #fff;
+
 
 // Main Font
-$mdev-heading-weight: 700;
+$main-font: 'Titillium Web', 'Helvetica', sans-serif;
+$heading-weight: 700;
+$subheading-weight: 500;
+$body-weight: 300;
+
 // Sizing Variables
 
 // Spacing Variables
@@ -13,3 +23,4 @@ $mdev-heading-weight: 700;
 // Button Variables
 
 // Radius Variables
+$standard-radius: 4px;

@@ -1,7 +1,7 @@
 {
-  "name": "@moreira-development/sass-boilerplate",
+  "name": "@moreira-development/wp-stylefavicon-exporter",
   "version": "1.1.0",
-  "description": "SASS Boilerplate for kicking off HTML5/SASS projects",
+  "description": "Tool for exporting styles and favicons for wordpress websites",
   "main": "/styles/global-main.scss",
   "scripts": {
     "lintcss": "stylelint '**/*.scss' --syntax scss",
@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/MoreiraDevelopment/sass-boilerplate#readme",
   "devDependencies": {
+    "@moreira-development/sass-boilerplate": "^1.1.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",

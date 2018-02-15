@@ -1,7 +1,7 @@
 ![Moreira Development](http://moreiradevelopment.io/social/googleLogo.png)
 
-# SASS Boilerplate
-## Collection of useful classes and Mixins for MDEV projects
+# Styles & Favicon Export Tool
+## This tool exports SASS with full optimization
 
 ### Running Project Locally
 ---

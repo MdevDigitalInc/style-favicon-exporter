@@ -9,11 +9,19 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const autoprefixer = require('autoprefixer');
+const WriteFilePlugin   = require('write-file-webpack-plugin')
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 const config = {
 
   entry: './index.js',
-
+  resolve: {
+    alias: {
+      'styles': resolve(__dirname, 'styles'),
+      'img': resolve(__dirname, 'img')
+    },
+    modules: ['node_modules', 'shared']
+  },
   output: {
     path: resolve(__dirname, 'dist'),
     filename: 'build.js'
@@ -47,10 +55,32 @@ const config = {
   //plugins
   plugins: [
     new webpack.LoaderOptionsPlugin({ options: { postcss: [ autoprefixer ]  } }),
-    new ExtractTextPlugin("/compiled/styles.css"),
+    new ExtractTextPlugin("/styles/styles.css"),
     new StyleLintPlugin({
       syntax: 'scss',
       configFile: './.stylelintrc'
+    }),
+    new FaviconsWebpackPlugin({
+      logo: 'img/favicon.png',
+      prefix: 'icons/',
+      emitStats: false,
+      persistentCache: true,
+      inject: true,
+      background: '#fff',
+      title: 'HTML 5 Boilerplate',
+
+      icons: {
+        android: true,
+        appleIcon: true,
+        appleStartup: true,
+        coast: false,
+        favicons: true,
+        firefox: true,
+        opengraph: false,
+        twitter: false,
+        yandex: false,
+        windows: false
+      }
     })
   ]
 };

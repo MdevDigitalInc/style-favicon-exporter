@@ -43,7 +43,7 @@ development.
 npm run build
 
 # Watch task
-npm run watch
+npm run dev
 ```
 ---
 

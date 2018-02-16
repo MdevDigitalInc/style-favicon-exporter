@@ -6,7 +6,7 @@
   "scripts": {
     "lintcss": "stylelint '**/*.scss' --syntax scss",
     "build": "webpack -p --progress --hide-modules",
-    "watch": "webpack --watch",
+    "dev": "webpack --watch",
     "clean": "rm -r dist/"
   },
   "repository": {

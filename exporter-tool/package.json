@@ -6,6 +6,7 @@
   "scripts": {
     "lintcss": "stylelint '**/*.scss' --syntax scss",
     "build": "webpack -p --progress --hide-modules",
+    "watch": "webpack --watch",
     "clean": "rm -r dist/"
   },
   "repository": {
@@ -26,7 +27,7 @@
   },
   "homepage": "https://github.com/MoreiraDevelopment/sass-boilerplate#readme",
   "devDependencies": {
-    "@moreira-development/sass-boilerplate": "^1.1.0",
+    "@moreira-development/sass-boilerplate": "^1.1.1",
     "autoprefixer": "^7.1.6",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
